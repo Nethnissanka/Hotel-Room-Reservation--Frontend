@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navbar {
+  background-color: #333 !important;
+  color: white;
+  padding: 10px;
+  overflow: hidden;
+}
+.nav-link {
+  color:white  !important;
+}
+.navbar-brand {
+  color: white;
+  font-size: 20px;
+}
+.navbar-nav{
+  margin-left :auto !important;
+}
+
+.smallimg{
+  height: 200px;
+  width: 100% !important;
+}
+.bs{
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  margin-top: 20px !important;
+  
+  padding: 10px !important;
+}
+.ant-picker{
+  box-shadow: none !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 10px;
+  font-style: black;
+  /* margin-top: 10px; */
+  padding: 10px;
+  border-radius: 3px;
+  height: 40px !important;
+  /* border: 1px solid black !important ; */
+  width: 100% !important;
+
+}
+.ant-picker-input input {
+  display: none;
+  font-style: black;
+  font-size: 10px;
+}
+
+input,select {
+  box-shadow: none !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 10px;
+  font-style: '#dcdcdc',;
+  margin-top: 10px;
+  padding: 10px;
+  height: 40px !important;
+  border-radius: 20px;
+  
+  /* border: 1px solid black !important ; */
+  width: 100% !important;
+
+}
+.bss{
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  margin-top: 20px !important;
+  margin-left: 150px;
+  margin-right: 150px;
+  
+  padding: 10px !important;
+}
+
+.ant-tabs-tab-btn{
+  color: #474545;
+  text-shadow: 0 0 0.25px currentcolor;
+}
+
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #a37d4c;
+  text-shadow: 0 0 0.25px currentcolor;
+}
+.ant-tabs .ant-tabs-ink-bar{
+  position: absolute;
+  background-color:#a37d4c;
+  pointer-events: none;
+}
+
+.ant-tabs .ant-tabs-tab {
+  font-size: 16px;
+}
+.ant-tabs >.ant-tabs-nav {
+  margin-left: 20px;
+}
+.shadow-md {
+  margin-top: 30px;
+}
