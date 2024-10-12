@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from '../services/axiosInstance';
 import Room from "../Components/Room";
 import Loader from "../Components/Loader";
 import "antd/dist/reset.css";

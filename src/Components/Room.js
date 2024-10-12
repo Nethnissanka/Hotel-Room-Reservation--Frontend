@@ -127,7 +127,7 @@
 
 // export default Room;
 
-
+//room.js
 import React, { useState } from "react";
 import { Modal, Button, Carousel } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
