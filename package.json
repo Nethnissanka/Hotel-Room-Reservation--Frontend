@@ -52,7 +52,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://hotel-room-reservation-backend.onrender.com",
   "devDependencies": {
     "tailwindcss": "^3.4.5"
   }
