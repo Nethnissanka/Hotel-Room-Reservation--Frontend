@@ -18,9 +18,10 @@ function Loginscreen() {
 
      try {
        setLoading(true);
-       const result = await (await axios.post('/api/users/login', user)).data;
+       const result = await (await axios.post('https://hotel-room-reservation-backend.onrender.com/api/users/login', user)).data;
        setLoading(false);
        localStorage.setItem("currentUser", JSON.stringify(result));
+       console.log("User logged in:", user);
        window.location.href = "/home";
      } catch (error) {
        console.log(error);

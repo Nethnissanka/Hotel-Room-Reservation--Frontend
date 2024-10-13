@@ -31,7 +31,7 @@ function Registerscreen() {
       //Sending Data to MongoDB
       try {
          setLoading(true);
-        const result = (await axios.post('/api/users/register', user)).data;
+        const result = (await axios.post('https://hotel-room-reservation-backend.onrender.com/api/users/register', user)).data;
          setLoading(false);
          setSucess(true);
 
