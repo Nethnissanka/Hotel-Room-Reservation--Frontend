@@ -25,7 +25,7 @@ function Bookingscreen() {
       
       try {
         setloading(true);
-        const { data } = await axios.post("/api/rooms/getroombyid", { roomid });
+        const { data } = await axios.post("https://hotel-room-reservation-backend.onrender.com/api/rooms/getroombyid", { roomid });
         setroom(data);
         setloading(false);
       } catch (error) {
@@ -69,7 +69,7 @@ function Bookingscreen() {
 
     try {
       setloading(true);
-      const result = await axios.post("/api/bookings/bookroom", bookingDetails);
+      const result = await axios.post("https://hotel-room-reservation-backend.onrender.com/api/bookings/bookroom", bookingDetails);
       setloading(false);
       setsucess(true);
       toast.success("Room added successfully");

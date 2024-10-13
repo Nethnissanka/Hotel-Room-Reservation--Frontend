@@ -29,7 +29,7 @@ function Navbar() {
               <button onClick={() => navigate('/bookings')} className="px-3 py-2 text-white rounded hover:bg-gray-700">My Bookings</button>
               {/* <button onClick={() => navigate('/profile')} className="px-3 py-2 text-white rounded hover:bg-gray-700">Profile</button> */}
 
-              <span className="px-3 py-2 text-white"><i className='mr-2.5 text-xl fa fa-user'></i>Hello, {user.name}</span>
+              <span className="px-3 py-2 text-white"><i className='mr-2.5 text-xl fa fa-user'></i>Wellcome {user.name}</span>
               <button onClick={logOut} className="px-3 py-2 text-white rounded hover:bg-gray-700">Logout</button>
             </>
           ) : (

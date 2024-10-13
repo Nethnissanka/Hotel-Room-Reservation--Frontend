@@ -303,7 +303,7 @@ export const MyOrders = () => {
     const fetchData = async () => {
       try {
         setloading(true);
-        const { data } = await axios.post("/api/bookings/getbookingsbyuserid", {
+        const { data } = await axios.post("https://hotel-room-reservation-backend.onrender.com/api/bookings/getbookingsbyuserid", {
           userid: user._id,
         });
         setmybookings(data);
@@ -320,7 +320,7 @@ export const MyOrders = () => {
   async function cancelBooking(bookingid, roomid) {
     try {
       setloading(true);
-      const result = await axios.post("/api/bookings/cancelbooking", {
+      const result = await axios.post("https://hotel-room-reservation-backend.onrender.com/api/bookings/cancelbooking", {
         bookingid,
         userid: user._id,
         roomid,
