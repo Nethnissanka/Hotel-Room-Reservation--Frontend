@@ -41,7 +41,7 @@ const CheckoutForm = ({ room, totalamount, fromDate, toDate, totaldays }) => {
       };
 
       try {
-        const result = await axios.post("/api/bookings/bookroom", bookingDetails);
+        const result = await axios.post("https://hotel-room-reservation-backend.onrender.com/api/bookings/bookroom", bookingDetails);
         console.log('Booking successful:', result);
         // Show success message or redirect
         setLoading(false);
