@@ -156,7 +156,7 @@ function Homescreen() {
             rooms.map((room) => {
               return (
                 <div
-                  className="mt-4 transition-transform transform col-md-9 hover:scale-105"
+                  className="mt-6 transition-transform transform col-md-9 hover:scale-105"
                   data-aos="zoom-in"
                   key={room._id}
                 >
